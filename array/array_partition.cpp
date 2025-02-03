@@ -17,7 +17,7 @@ public:
       
 };
 int main() {
-    vector<int> nums = {1,4,3,2};
+    vector<int> nums = {1,4,3,2,5,6,9};
     Solution s;
     cout<<s.arrayPairSum(nums);
     return 0;
