@@ -16,7 +16,7 @@ int findMax(int arr[][100], int n, int m){
 
 int main(){
     int n, m;
-    cout<<"Enter the number of rows and columns: ";
+    cout<<"Enter the number of rows and columns : ";
     cin>>n>>m;
     int arr[100][100];
     cout<<"Enter the elements of the array: ";
