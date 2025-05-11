@@ -1,20 +1,24 @@
-#include<iostream>
-#include<string>
-using namespace std;
+#include <iostream>
+#include <string>
+#include <vector>
+#include <unordered_map>
+#include <algorithm>
 
-int main(){
-    string s;
-    cin >> s;
-    int hash[256]={0};
-    for(int i =0;i<s.size();i++){
-        hash[s[i]]++;
+int main() {
+    std::string str = "hello world";
+    std::unordered_map<char, int> charCount;
+
+    // Count occurrences of each character
+    for (char c : str) {
+        if (c != ' ') { // Ignore spaces
+            charCount[c]++;
+        }
     }
-    int q;
-    cin >> q;
-    while(q--){
-        char c;
-        cin >> c;
-        cout<< hash[c] << endl;
-        
+
+    // Print the character counts
+    for (const auto& pair : charCount) {
+        std::cout << pair.first << ": " << pair.second << std::endl;
     }
+
+    return 0;
 }
