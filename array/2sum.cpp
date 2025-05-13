@@ -7,7 +7,6 @@ vector <vector<int>> twoSum (vector <int> nums){
     for(int i=0; i<n; i++){
         if(nums[i]>nums[i+1]) continue;
         int j=n-1;
-        // int k=n-1;
         while(i<j){
             int sum=nums[i]+nums[j];
 
