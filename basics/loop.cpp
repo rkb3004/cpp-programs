@@ -1,11 +1,17 @@
 #include <iostream>
 using namespace std;
-int main() {
-    int i = 0;
-    while (i < 5) {
-        cout << "Hello, World!" << endl;
-        i++;
-    }
-    return 0;
-    
+
+void myfun(int i, int &k) {
+    i = 1;
+    k = 2;
 }
+
+int main () {
+    int x = 0;
+    myfun (x, x);
+    cout << x << endl;
+    return 0;
+}
+
+//Output - 2
+//myfun(int i, int &k)  takes one normal parameter (i) and one reference parameter (k).
