@@ -29,8 +29,8 @@ public:
 int main() {
     Solution sol;
     string s;
-    cin >> s; // Read the input string
-    int result = sol.countSubstrings(s); // Count palindromic substrings
-    cout << result << endl; // Output the result
+    cin >> s; 
+    int result = sol.countSubstrings(s); 
+    cout << result << endl; 
     return 0;
 }
