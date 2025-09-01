@@ -15,8 +15,7 @@ int main(){
         int u,v;
         cout<<"Enter edge (u v): ";
         cin>>u>>v;
-        adj[u][v] = 1;
-        adj[v][u] = 1; // For undirected graph5
+        adj[u][v] = 1; 
     }
     cout<<"Adjacency Matrix: \n";
     for(int i=0; i<n; i++){
